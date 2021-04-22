@@ -1,5 +1,4 @@
 #!/bin/bash
-
 PS1="\e[0;32m\\u\e[m | \e[0;34m\\W\e[m % "
 
 # Disable bash_history
@@ -17,5 +16,13 @@ alias lh="ls -lh --time-style=$LS_TIME_HOUR --color"
 alias lf="ls -lh --time-style=$LS_TIME_FULL"
 
 
-tmux has-session -t personal || tmux new-session -A -d -s personal
-tmux has-session -t bilgin || tmux new-session -A -d -s bilgin
+function check_session {
+  tmux has-session -t "$1" 2>/dev/null
+  if [ "$?" -eq 1 ]; then
+    tmux new-session -d -s "$1"
+  fi
+}
+
+check_session "personal"
+check_session "bilgin"
+
