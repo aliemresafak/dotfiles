@@ -31,6 +31,5 @@ nnoremap <S-A-h> 2<C-w><
 xnoremap < <gv
 xnoremap > >gv
 
-" nnoremap <silent> <leader>t :sp <Bar> resize 10 <Bar> term<CR>a
 nnoremap <silent> <leader>t :split <Bar> resize 10 <Bar> term<CR>
-tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n><C-w><C-k>
