@@ -15,8 +15,8 @@ alias la="ls -la --time-style=$LS_TIME_HOUR --color"
 alias lh="ls -lh --time-style=$LS_TIME_HOUR --color"
 alias lf="ls -lh --time-style=$LS_TIME_FULL"
 
-alias venv="virtualenv venv && source venv/bin/activate"
-
+# alias venv="virtualenv venv && source venv/bin/activate"
+alias venv="python -m venv venv"
 
 function check_session {
   tmux has-session -t "$1" 2>/dev/null
