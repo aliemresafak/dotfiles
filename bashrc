@@ -1,5 +1,5 @@
 #!/bin/bash
-PS1="\e[0;32m\\u\e[m | \e[0;34m\\W\e[m % "
+# PS1="\e[0;32m\\u\e[m | \e[0;34m\\W\e[m % "
 
 # Disable bash_history
 unset HISTFILE
@@ -26,6 +26,6 @@ function check_session {
 }
 
 check_session "personal"
-check_session "bilgin"
 alias personal="tmux attach -t personal"
-alias bilgin="tmux attach -t personal"
+
+alias v="vim"
