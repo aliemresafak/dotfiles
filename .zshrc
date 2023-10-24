@@ -11,6 +11,10 @@ alias plg="pip list | grep"
 
 alias v="nvim"
 
+# Rakort
+alias tls="tmux ls"
+alias ta="tmux attach -t"
+
 # For python automatically activate environment
 function cd() {
   builtin cd "$@"
