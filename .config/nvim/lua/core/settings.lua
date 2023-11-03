@@ -2,7 +2,8 @@ local cmd = vim.cmd
 local g = vim.g
 local opt = vim.opt
 
-g.mapleader = ","
+g.mapleader = " "
+g.localleader = " "
 opt.mouse = "a"
 opt.clipboard = "unnamedplus"
 opt.swapfile = false
@@ -22,10 +23,10 @@ opt.tabstop = 4
 opt.smartindent = true
 
 -- folding
-vim.o.foldcolumn = "1"
-vim.o.foldlevel = 99
-vim.o.foldlevelstart = 99
-vim.o.foldenable = true
+-- vim.o.foldcolumn = "1"
+-- vim.o.foldlevel = 99
+-- vim.o.foldlevelstart = 99
+-- vim.o.foldenable = true
 
 -- disable commenting when add new line
 cmd([[au BufEnter * set fo-=c fo-=r fo-=o]])
