@@ -28,7 +28,6 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        "lua_ls",
         "emmet_ls",
         "pyright",
       },

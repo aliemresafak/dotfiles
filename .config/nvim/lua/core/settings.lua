@@ -16,6 +16,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.linebreak = true
 opt.laststatus = 3
+opt.cmdheight = 0
 
 opt.expandtab = true
 opt.shiftwidth = 4
@@ -23,10 +24,12 @@ opt.tabstop = 4
 opt.smartindent = true
 
 -- folding
--- vim.o.foldcolumn = "1"
--- vim.o.foldlevel = 99
--- vim.o.foldlevelstart = 99
--- vim.o.foldenable = true
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldcolumn = "1"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 
 -- disable commenting when add new line
 cmd([[au BufEnter * set fo-=c fo-=r fo-=o]])
