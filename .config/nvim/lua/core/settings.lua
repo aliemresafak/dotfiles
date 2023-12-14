@@ -16,7 +16,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.linebreak = true
 opt.laststatus = 3
-opt.cmdheight = 0
+opt.showtabline = 2
 
 opt.expandtab = true
 opt.shiftwidth = 4
